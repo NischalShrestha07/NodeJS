@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            float: left;
+        }
+
+        nav ul {
+            float: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        .about {
+            background: #fff;
+            padding: 50px 0;
+        }
+
+        /* Services Section */
+        .services {
+            background: #f4f4f4;
+            padding: 50px 0;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px 0;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact button {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h2>name</h2>
+    <h2><%-name%></h2>
+    <h2><%-age%></h2>
+    <h1>This is home page rendered from ejs</h1>
+    <h1>This is home page rendered from ejs</h1>
+    <h1>This om ejs</h1>
+    <h1>1+1</h1>prints same
+    <h1><%- 1+1 %></h1>helps to evalute gives 2
+    <h1>This is home page rendered from ejs</h1>
+    <h1>This is home page rendered from ejs</h1> -->
+
+    <!-- <header>
+        <h1>Your Website Header</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <h2>Welcome to Your Website!</h2>
+        <p>This is a simple website. You can modify it to suit your needs.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer> -->
+    <header>
+        <div class="container">
+            <h1>My Awesome Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Our Website</h2>
+            <p>This is a place where you can find everything you need.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec turpis vitae justo tincidunt viverra.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Service 1</li>
+                <li>Service 2</li>
+                <li>Service 3</li>
+                <li>Service 4</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Awesome Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
