@@ -201,7 +201,6 @@
 </html> -->
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -241,8 +240,7 @@
         }
 
         .card {
-            margin-top: 20px;
-            width: 100vw;
+            width: 300px;
             background-color: #fff;
             border-radius: 10px;
             padding: 20px;
@@ -277,27 +275,29 @@
 
 <body>
 
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </div>
-
-    <div class="container">
-        <img src="https://via.placeholder.com/300" alt="Placeholder Image" width="1000px" height="300px">
-        <div class="card">
-            <h2>Card 1</h2>
-            <p>This is a simple card with some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button>Edit</button>
-            <button>Delete</button>
+    <%- include('./navbar') %>
+        <div class="container">
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+                <h2>Card 1</h2>
+                <p>This is a simple card with some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="/blog">Read More</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+                <h2>Card 2</h2>
+                <p>This is another card with different content. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+                <h2>Card 3</h2>
+                <p>Yet another card with its own content. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
         </div>
 
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </div>
+        <%- include('./footer') %>
 
 </body>
 
