@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <title>Document</title> -->
+<!-- <style>
         /* Reset CSS */
         * {
             margin: 0;
@@ -104,11 +104,11 @@
             padding: 20px 0;
             text-align: center;
         }
-    </style>
-</head>
+    </style> -->
+<!-- </head> -->
 
-<body>
-    <!-- <h2>name</h2>
+<!-- <body> -->
+<!-- <h2>name</h2>
     <h2><%-name%></h2>
     <h2><%-age%></h2>
     <h1>This is home page rendered from ejs</h1>
@@ -119,7 +119,7 @@
     <h1>This is home page rendered from ejs</h1>
     <h1>This is home page rendered from ejs</h1> -->
 
-    <!-- <header>
+<!-- <header>
         <h1>Your Website Header</h1>
     </header>
     <nav>
@@ -135,7 +135,7 @@
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved.</p>
     </footer> -->
-    <header>
+<!-- <header>
         <div class="container">
             <h1>My Awesome Website</h1>
             <nav>
@@ -168,9 +168,9 @@
     <section id="services" class="services">
         <div class="container">
             <h2>Our Services</h2>
-            <ul>
-                <li>Service 1</li>
-                <li>Service 2</li>
+            <ul> -->
+<!-- <li>Service 1</li> -->
+<!-- <li>Service 2</li>
                 <li>Service 3</li>
                 <li>Service 4</li>
             </ul>
@@ -191,10 +191,113 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 My Awesome Website. All rights reserved.</p>
-        </div>
+            <p>&copy; 2024 My Awesome Website. All rights reserved.</p> -->
+<!-- </div>
     </footer>
 
+
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            margin-top: 20px;
+            width: 100vw;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image" width="1000px" height="300px">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>This is a simple card with some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Edit</button>
+            <button>Delete</button>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </div>
 
 </body>
 
