@@ -19,7 +19,7 @@ res.render('home',{name:'Nischal',age:'21'})
 
 app.get('/about',(req,res)=>{
 // res.send(`<h1>This is about page</h1><h2>This is h2</h2><img src="/static/images/goku.png">`)
-res.send(`<h1>This is about page</h1><h2>This is h2</h2><img src="goku.png">`)
+res.send(`<h1>This is about page</h1><h2>This is h2</h2><img src="goku.jpeg" alt="photo">`)
 })
 
 app.get('/blog',(req,res)=>{
