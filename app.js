@@ -2,6 +2,8 @@ const { name } = require('ejs')
 const express=require('express')
 const app=express()
 
+require("./model/index")
+
 app.set('view engine','ejs')
 
 
