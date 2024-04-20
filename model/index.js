@@ -27,6 +27,7 @@ sequelize
 
 const db = {};
 
+db.blogs = require('./blogModel')(sequelize,DataTypes)
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
