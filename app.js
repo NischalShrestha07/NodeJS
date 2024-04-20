@@ -18,7 +18,8 @@ res.render('home',{name:'Nischal',age:'21'})
 
 
 app.get('/about',(req,res)=>{
-res.send(`<h1>This is about page</h1><h2>This is h2</h2><img src="/static/images/goku.png">`)
+// res.send(`<h1>This is about page</h1><h2>This is h2</h2><img src="/static/images/goku.png">`)
+res.send(`<h1>This is about page</h1><h2>This is h2</h2><img src="goku.png">`)
 })
 
 app.get('/blog',(req,res)=>{
@@ -31,6 +32,12 @@ app.get('/createblog',(req,res)=>{
 // res.send("So, this is a create blog")
 res.render("createblog")
 })
+
+app.get('/welcome',(req,res)=>{
+// res.send("So, this is a create blog")
+res.render("welcome")
+})
+
 app.get('/create/blog',(req,res)=>{
 res.send("So, this is a inside create then blog")
 })
@@ -40,7 +47,9 @@ app.get('/blog/edit',(req,res)=>{
 // res.send("So, Here we will gona do editing")
 res.render('editblog')
 })
-
+// app.get('/welcome',(req.res)=>{
+//     res.render('welcome')
+// })
 
 
 app.listen(3000,()=>{
