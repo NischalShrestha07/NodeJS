@@ -16,8 +16,9 @@ app.get('/',(req,res)=>{
 res.render('home',{name:'Nischal',age:'21'})
 })
 
+
 app.get('/about',(req,res)=>{
-res.send(`<h1>This is about page</h1><h2>This is h2</h2><img src="goku.png" alt="goku">`)
+res.send(`<h1>This is about page</h1><h2>This is h2</h2><img src="/static/images/goku.png">`)
 })
 
 app.get('/blog',(req,res)=>{
