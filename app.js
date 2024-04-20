@@ -17,15 +17,15 @@ res.render('home',{name:'Nischal',age:'21'})
 })
 
 
-app.get('/about',(req,res)=>{
 // res.send(`<h1>This is about page</h1><h2>This is h2</h2><img src="/static/images/goku.png">`)
+app.get('/about',(req,res)=>{
 res.send(`<h1>This is about page</h1><h2>This is h2</h2><img src="goku.jpeg" alt="photo">`)
 })
 
 app.get('/blog',(req,res)=>{
 // res.send("Welcome to blog page")
 res.render('blog')
-})
+}) 
 
 // rest apis
 app.get('/createblog',(req,res)=>{
@@ -33,7 +33,7 @@ app.get('/createblog',(req,res)=>{
 res.render("createblog")
 })
 
-app.get('/welcome',(req,res)=>{
+app.get('/welcome',(req,res)=>{ 
 // res.send("So, this is a create blog")
 res.render("welcome")
 })

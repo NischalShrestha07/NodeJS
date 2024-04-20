@@ -1,0 +1,10 @@
+//ORM (Object Relational Mapping)
+1.Seqalize
+2.prisma
+3.mongoose
+
+users.create({
+    title:"hello",
+    description:"hi",
+    substitle:"bye"
+})
