@@ -40,6 +40,13 @@ app.get('/createblog',(req,res)=>{
 res.render("createblog")
 })
 
+// **************************************
+app.get('/todo',(req,res)=>{
+res.render("todo")
+})
+//*************************************** */
+
+
 app.get('/welcome',(req,res)=>{ 
 // res.send("So, this is a create blog")
 res.render("welcome")
@@ -66,6 +73,16 @@ app.post('/blog',async(req,res)=>{
     // const title=req.body.title
     // const subtitle=req.body.subtitle
     // const description=req.body.description
+    const {title,subtitle,description}=req.body
+   await  blogs.create({
+        title:title,
+        subTitle:subtitle,
+        description:description
+    })
+    res.redirect("/")
+})
+app.post('/todo',async(req,res)=>{
+    console.log(req.body);
     const {title,subtitle,description}=req.body
    await  blogs.create({
         title:title,
