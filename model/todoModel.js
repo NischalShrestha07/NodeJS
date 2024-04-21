@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
     const Todo = sequelize.define("todo", {
-        // blog ko blogs vanera banxa hai phpAdmin ma
+        // todo ko todos vanera banxa hai phpAdmin ma
       title: {
         type: DataTypes.STRING,
         allowNull: false,

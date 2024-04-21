@@ -89,7 +89,7 @@ app.post('/blog',async(req,res)=>{
 app.post('/todo',async(req,res)=>{
     console.log(req.body);
     const {title,subtitle,description}=req.body
-   await  todos.create({
+   await todos.create({
         title:title,
         subtitle:subtitle,
         description:description
