@@ -56,20 +56,21 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <h1>TODO LIST</h1>
-        <div class="inputTitle" id="manage">
-            <input type="text" name="title" placeholder="Title:-" id="">
+    <%- include('./navbar') %>
+        <div class="container">
+            <h1>TODO LIST</h1>
+            <div class="inputTitle" id="manage">
+                <input type="text" name="title" placeholder="Title:-" id="">
+            </div>
+            <div class="inputSubtitle" id="manage">
+                <input type="text" name="subtitle" placeholder="Subtitle:-" id="">
+            </div>
+            <div class="inputDescription" id="manage">
+                <input type="text" name="Description" placeholder="Description:-" id="">
+            </div>
+            <button type="submit">Create</button>
         </div>
-        <div class="inputSubtitle" id="manage">
-            <input type="text" name="subtitle" placeholder="Subtitle:-" id="">
-        </div>
-        <div class="inputDescription" id="manage">
-            <input type="text" name="Description" placeholder="Description:-" id="">
-        </div>
-        <button type="submit">Create</button>
-    </div>
+        <%- include('./footer') %>
 
 </body>
 
