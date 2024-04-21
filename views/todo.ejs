@@ -6,24 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <style>
+        .container {
+            text-align: center;
+            border: 3px solid red;
+            padding: 12vh 3vw;
+            margin: 5% 25%;
+            background: greenyellow;
+            border-radius: 25px;
+            height: 100%;
+        }
 
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            font-size: 55px;
+            font-weight: bold;
+
+        }
+
+        #manage {
+            margin: 20px;
+
+        }
+
+        input {
+            padding: 20px;
+            font-size: 28px;
+            border-radius: 25px;
+            border: 3px solid black;
+            font-family: cursive;
+            text-align: center;
+            width: 60%;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 15px 35px;
+            cursor: pointer;
+            font-size: 30px;
+            border-radius: 20px;
+            border: 3px solid black;
+            background: red;
+            color: white;
+            font-weight: bold;
+            font-family: cursive;
+
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container">
-        <div class="inputTitle">
+        <h1>TODO LIST</h1>
+        <div class="inputTitle" id="manage">
             <input type="text" name="title" placeholder="Title:-" id="">
         </div>
-        <div class="inputSubtitle">
+        <div class="inputSubtitle" id="manage">
             <input type="text" name="subtitle" placeholder="Subtitle:-" id="">
         </div>
-        <div class="inputDescription">
+        <div class="inputDescription" id="manage">
             <input type="text" name="Description" placeholder="Description:-" id="">
         </div>
-
+        <button type="submit">Create</button>
     </div>
+
 </body>
 
 </html>

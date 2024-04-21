@@ -1,6 +1,7 @@
 const { name } = require('ejs')
 const express=require('express')
 const { blogs } = require('./model/index')
+const { todos } = require('./model/index')
 const app=express()
 
 require("./model/index")
@@ -81,17 +82,22 @@ app.post('/blog',async(req,res)=>{
     })
     res.redirect("/")
 })
+
+
+
+// ***************************************
 app.post('/todo',async(req,res)=>{
     console.log(req.body);
     const {title,subtitle,description}=req.body
-   await  blogs.create({
+   await  todos.create({
         title:title,
-        subTitle:subtitle,
+        subtitle:subtitle,
         description:description
     })
     res.redirect("/")
 })
 
+// ***************************************
 
 
 

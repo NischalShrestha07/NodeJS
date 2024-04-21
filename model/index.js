@@ -29,6 +29,7 @@ const db = {};
 
 db.blogs = require('./blogModel')(sequelize,DataTypes)
 db.users = require('./userModel')(sequelize,DataTypes)
+db.todos = require('./todoModel')(sequelize,DataTypes)
 
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
