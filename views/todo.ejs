@@ -58,16 +58,18 @@
     <%- include('./navbar') %>
         <div class="container">
             <h1>TODO LIST</h1>
-            <div class="inputTitle" id="manage">
-                <input type="text" name="title" placeholder="Title:-" id="">
-            </div>
-            <div class="inputSubtitle" id="manage">
-                <input type="text" name="subtitle" placeholder="Subtitle:-" id="">
-            </div>
-            <div class="inputDescription" id="manage">
-                <input type="text" name="Description" placeholder="Description:-" id="">
-            </div>
-            <input id="createInp" type="submit" value="Create">
+            <form action="/todo" method="post">
+                <div class="inputTitle" id="manage">
+                    <input type="text" name="title" placeholder="Title:-" id="">
+                </div>
+                <div class="inputSubtitle" id="manage">
+                    <input type="text" name="subtitle" placeholder="Subtitle:-" id="">
+                </div>
+                <div class="inputDescription" id="manage">
+                    <input type="text" name="description" placeholder="Description:-" id="">
+                </div>
+                <input id="createInp" type="submit" value="Create">
+            </form>
         </div>
         <%- include('./footer') %>
 
