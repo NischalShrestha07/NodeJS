@@ -8,9 +8,11 @@ require("./model/index")
 
 app.set('view engine','ejs')
 
+// MULTER CONFIG
+const {multer,storage}=require('./middleware/multerConfig')
+const upload=multer({storage:storage})
 
-
-// impertant remember this hai sab ma chainxa
+// important remember this hai sab ma chainxa
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 // app.get('/',(req,res)=>{
@@ -68,9 +70,13 @@ res.render('editblog')
 
 
 
-// backend 
-app.post('/blog',async(req,res)=>{
+// BACKEND PART 
+// upload wala middleware ho
+// for multiple files instead of single use array
+
+app.post('/blog',upload.single('image'),  async(req,res)=>{
     console.log(req.body);
+    console.log(req.file);
     // const title=req.body.title
     // const subtitle=req.body.subtitle
     // const description=req.body.description
@@ -78,7 +84,8 @@ app.post('/blog',async(req,res)=>{
    await  blogs.create({
         title:title,
         subTitle:subtitle,
-        description:description
+        description:description,
+        imageUrl:req.file.filename
     })
     res.redirect("/")
 })
