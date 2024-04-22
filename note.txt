@@ -8,3 +8,8 @@ users.create({
     description:"hi",
     substitle:"bye"
 })
+
+
+//multer ->middleware
+
+middleware-> it is kind of like a checking bar between frontend and backend.
