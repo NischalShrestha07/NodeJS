@@ -6,7 +6,7 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
   dialect: dbConfig.dialect,
   operatorsAliases: false,
-  port : 3306, 
+  port: 3306,
 
   pool: {
     max: dbConfig.pool.max,
@@ -27,9 +27,9 @@ sequelize
 
 const db = {};
 
-db.blogs = require('./blogModel')(sequelize,DataTypes)
-db.users = require('./userModel')(sequelize,DataTypes)
-db.todos = require('./todoModel')(sequelize,DataTypes)
+db.blogs = require('./blogModel')(sequelize, DataTypes)
+db.users = require('./userModel')(sequelize, DataTypes)
+db.todos = require('./todoModel')(sequelize, DataTypes)
 
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
@@ -37,7 +37,7 @@ db.sequelize = sequelize;
 
 
 
-db.sequelize.sync({ force: false}).then(() => {
+db.sequelize.sync({ force: false }).then(() => {
   console.log("yes re-sync done");
 });
 

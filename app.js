@@ -71,9 +71,9 @@ app.get('/blog/edit', (req, res) => {
 // })
 
 //*************************************** */
-app.get('./details', (req, res) => {
-    res.render('details')
-})
+// app.get('./detail', (req, res) => {
+//     res.render('detail')
+// })
 
 //*************************************** */
 
