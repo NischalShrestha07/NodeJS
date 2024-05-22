@@ -2,7 +2,6 @@ const { name } = require('ejs')
 const express = require('express')
 const { blogs } = require('./model/index')
 const { todos } = require('./model/index')
-const { details } = require('./model/index')
 
 
 const app = express()
