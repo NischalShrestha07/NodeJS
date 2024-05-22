@@ -23,7 +23,6 @@ app.use(express.urlencoded({ extended: true }))
 app.get('/', (req, res) => {
     // res.render('./views/home.ejs') this throws errors 
 
-
     // res.render('home.ejs')
     res.render('home', { name: 'Nischal', age: '21' })
 })
